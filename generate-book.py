@@ -44,7 +44,7 @@ def main():
         summary.write('- [Guidelines for library changes](libs_changes.md)\n')
         collect(summary, 'text', 0)
 
-    subprocess.call(['mdbook', 'build'])
+    subprocess.call(['mdbook', 'build', '-d', 'docs'])
 
 def collect(summary, path, depth):
     entries = [e for e in os.scandir(path) if e.name.endswith('.md')]

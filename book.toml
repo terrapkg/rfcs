@@ -5,7 +5,7 @@ title = "The Terra RFC Book"
 smart-punctuation = true
 no-section-label = true
 git-repository-url = "https://github.com/terrapkg/rfcs/"
-site-url = "/rfcs/"
+site-url = ""
 
 [output.html.search]
 heading-split-level = 0
