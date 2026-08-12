@@ -23,15 +23,14 @@ import shutil
 import subprocess
 
 def main():
-    symlink('./README.md', 'src/introduction.md')
-
     with open('src/SUMMARY.md', 'w') as summary:
         summary.write('[Introduction](introduction.md)\n\n')
         # summary.write('- [Guidelines for compiler changes](compiler_changes.md)\n')
         # summary.write('- [Guidelines for language changes](lang_changes.md)\n')
         # summary.write('- [Guidelines for library changes](libs_changes.md)\n')
-        collect(summary, 'text', 0)
+        collect(summary, 'src', 0)
 
+    symlink('./README.md', 'src/introduction.md')
     subprocess.call(['mdbook', 'build'])
 
 def collect(summary, path, depth):
