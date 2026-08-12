@@ -45,7 +45,7 @@ def main():
         collect(summary, 'text', 0)
 
     symlink('../book.toml', 'src/book.toml')
-    subprocess.call(['mdbook', 'build'], cwd='src')
+    subprocess.call(['mdbook', 'build', '-d', '../book'], cwd='src')
 
 def collect(summary, path, depth):
     entries = [e for e in os.scandir(path) if e.name.endswith('.md')]
