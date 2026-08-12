@@ -39,7 +39,7 @@ def collect(summary, path, depth):
     for entry in entries:
         indent = '    '*depth
         name = entry.name[:-3]
-        link_path = entry.path[5:]
+        link_path = entry.path[4:]
         summary.write(f'{indent}- [{name}]({link_path})\n')
         maybe_subdir = os.path.join(path, name)
         if os.path.isdir(maybe_subdir):
