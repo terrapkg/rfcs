@@ -30,7 +30,7 @@ def main():
         # summary.write('- [Guidelines for library changes](libs_changes.md)\n')
         collect(summary, 'src', 0)
 
-    symlink('./README.md', 'src/introduction.md')
+    symlink('../README.md', 'src/introduction.md')
     subprocess.call(['mdbook', 'build'])
 
 def collect(summary, path, depth):
