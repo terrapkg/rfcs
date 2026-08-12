@@ -34,7 +34,7 @@ def main():
     subprocess.call(['mdbook', 'build'])
 
 def collect(summary, path, depth):
-    entries = [e for e in os.scandir(path) if e.name.endswith('.md') && e.name not in ['SUMMARY.md', 'introduction.md']]
+    entries = [e for e in os.scandir(path) if e.name.endswith('.md') and e.name not in ['SUMMARY.md', 'introduction.md']]
     entries.sort(key=lambda e: e.name)
     for entry in entries:
         indent = '    '*depth
