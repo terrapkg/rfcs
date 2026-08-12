@@ -6,7 +6,7 @@ smart-punctuation = true
 no-section-label = true
 git-repository-url = "https://github.com/terrapkg/rfcs/"
 site-url = ""
-edit-url-template = "https://github.com/terrapkg/rfcs/edit/main/text/{path}"
+edit-url-template = "https://github.com/terrapkg/rfcs/edit/main/{path}"
 
 [output.html.search]
 heading-split-level = 0
@@ -15,4 +15,4 @@ heading-split-level = 0
 runnable = false
 
 [build]
-extra-watch-dirs = ["text"]
+#extra-watch-dirs = ["text"]
