@@ -14,7 +14,8 @@ Andaman is named after the [Andaman Sea](https://en.wikipedia.org/wiki/Andaman_S
 
 Pretty sure [subatomic] was named by Cappy. It also could be Lea. I'm not too sure.
 
-As to why it's named subatomic… I don't know.
+Jade mentioned that subatomic was named that way to fit into other tauOS components.
+For context, "common" in Andaman Common repositories was referring to Ultramarine and tauOS.
 
 ### Kiritan
 
@@ -38,7 +39,8 @@ honestly I don't know.
 
 ## Tuatara
 
-…
+Quote from internal conversations:
+> a lizard like reptile that lives along rocks so...terra relations also sounds like Terra
 
 ## gawr gura
 
